@@ -1,3 +1,4 @@
+// BỔ SUNG THÊM BANNER TỰ ĐỘNG CHUYỂN ĐỔI, PHIM VÀ EVENT CÓ THỂ KÉO //
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -5,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CGV Style Website</title>
     <link rel="stylesheet" href="main.css">
-    <script defer src="main.js"></script>
 </head>
 <body>
     <!-- Thanh điều hướng -->
@@ -25,9 +25,9 @@
     <!-- Banner trượt -->
     <section class="banner">
         <div class="carousel">
-            <div class="carousel-slide active" style="background-image: url('./image/haha.jpg');"></div>
-            <div class="carousel-slide" style="background-image: url('./image/hehe.jpg');"></div>
-            <div class="carousel-slide" style="background-image: url('./image/wow.jpg');"></div>
+            <div class="carousel-slide active" style="background-image: url('../image/haha.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('../image/hehe.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('../image/wow.jpg');"></div>
             <button class="prev">&#10094;</button>
             <button class="next">&#10095;</button>
         </div>
@@ -39,34 +39,34 @@
         <div class="movie-carousel">
             <div class="movies">
                 <a href="movie1.html" class="movie">
-                    <img src="snow.jpg" alt="Movie 1">
+                    <img src="../image/snow.jpg" alt="Movie 1">
                 </a>
                 <a href="movie2.html" class="movie">
-                    <img src="./image/stell.jpg" alt="Movie 2">
+                    <img src="../image/flow.jpg" alt="Movie 2">
                 </a>
                 <a href="movie3.html" class="movie">
-                    <img src="./image/kodau.jpg" alt="Movie 3">
+                    <img src="../image/kodau.jpg" alt="Movie 3">
                 </a>
                 <a href="movie4.html" class="movie">
-                    <img src="./image/flow.jpg" alt="Movie 4">
+                    <img src="../image/flow.jpg" alt="Movie 4">
                 </a>
                 <a href="movie4.html" class="movie">
-                    <img src="./image/flow.jpg" alt="Movie 4">
+                    <img src="../image/flow.jpg" alt="Movie 4">
                 </a>
                 <a href="movie4.html" class="movie">
-                    <img src="./image/flow.jpg" alt="Movie 4">
+                    <img src="../image/flow.jpg" alt="Movie 4">
                 </a>
                 <a href="movie4.html" class="movie">
-                    <img src="./image/flow.jpg" alt="Movie 4">
+                    <img src="../image/flow.jpg" alt="Movie 4">
                 </a>
                 <a href="movie4.html" class="movie">
-                    <img src="./image/flow.jpg" alt="Movie 4">
+                    <img src="../image/flow.jpg" alt="Movie 4">
                 </a>
                 <a href="movie4.html" class="movie">
-                    <img src="./image/flow.jpg" alt="Movie 4">
+                    <img src="../image/flow.jpg" alt="Movie 4">
                 </a>
                 <a href="movie1.html" class="movie">
-                    <img src="snow.jpg" alt="Movie 1">
+                    <img src="../image/snow.jpg" alt="Movie 1">
                 </a>
             </div>
             <button class="movie-prev">&#10094;</button>
@@ -91,11 +91,13 @@
             <a href="event3.html" class="event">
                 <img src="https://via.placeholder.com/300x200?text=300x200" alt="Event 3">
             </a>
-            
         </div>
+        <button class="event-prev">&#10094;</button>
+        <button class="event-next">&#10095;</button>
     </section>
     <footer>
         <p>&copy; 2025 CGV Vietnam. All rights reserved.</p>
     </footer>
+    <script defer src="main.js"></script>
 </body>
 </html>
