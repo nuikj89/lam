@@ -1,0 +1,90 @@
+/* CSS MỚI CHO LOGIN VÀ REGISTER */
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+}
+.form-wrapper {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #ffffff;
+}
+.form-control {
+  position: relative;
+  margin-bottom: 25px;
+  text-align: left;
+}
+.form-control input {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: 2px solid #ffffff33;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+}
+.form-control label {
+  position: absolute;
+  top: -12px;
+  left: 12px;
+  background: rgba(15, 32, 39, 0.8);
+  padding: 0 6px;
+  font-size: 14px;
+  color: #ccc;
+}
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #ff4b2b;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button[type="submit"]:hover {
+  background: #ff416c;
+}
+.form-help {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #bbb;
+}
+.form-help a {
+  color: #ff4b2b;
+  text-decoration: none;
+}
+.form-help a:hover {
+  text-decoration: underline;
+}
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+p a {
+  color: #ff4b2b;
+  text-decoration: none;
+  font-weight: bold;
+}
+p a:hover {
+  text-decoration: underline;
+}
