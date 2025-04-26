@@ -188,10 +188,105 @@ nav ul li a:hover {
     background: rgba(0, 0, 0, 0.8);
 }
 /* Footer */
-footer {
-    background: black;
-    color: white;
+.footer-cgv {
+    background: #ffffff;
+    font-size: 14px;
+    color: #333;
+    margin-top: 50px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px 10px;
+  }
+  
+  .footer-column {
+    flex: 1 1 200px;
+    margin: 10px;
+  }
+  
+  .footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #000;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .footer-column ul li a:hover {
+    color: red;
+  }
+  
+  .social-icons a img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .bct-icon {
+    margin-top: 10px;
+    width: 120px;
+  }
+  .footer-divider {
+    display: flex;
+    align-items: center;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-}
+    margin: 20px 0;
+  }
+  
+  .footer-divider::before,
+  .footer-divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 2px solid #333;
+  }
+  
+  .footer-divider:not(:empty)::before {
+    margin-right: 10px;
+  }
+  
+  .footer-divider:not(:empty)::after {
+    margin-left: 10px;
+  }
+  
+  .footer-divider span {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .footer-bottom {
+    background: #fff;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  .footer-info img {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-info p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .brick-wall {
+    background: url('brick-wall.png') repeat-x center;
+    height: 80px;
+  }
+  
