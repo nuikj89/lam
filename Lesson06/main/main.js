@@ -52,3 +52,31 @@ document.addEventListener("DOMContentLoaded", function () {
     eventPrev.addEventListener("click", () => moveEvents(-1));
     eventNext.addEventListener("click", () => moveEvents(1));
 });
+document.addEventListener("DOMContentLoaded", function () {
+    if (typeof movies !== "undefined") {
+        const movieContainer = document.querySelector(".movies");
+        movies.forEach(movie => {
+            const a = document.createElement("a");
+            a.href = movie.url;
+            a.classList.add("movie");
+            const img = document.createElement("img");
+            img.src = movie.img;
+            img.alt = movie.name;
+            a.appendChild(img);
+            movieContainer.appendChild(a);
+        });
+    }
+    if (typeof events !== "undefined") {
+        const eventContainer = document.querySelector(".events");
+        events.forEach(event => {
+            const a = document.createElement("a");
+            a.href = event.url;
+            a.classList.add("event");
+            const img = document.createElement("img");
+            img.src = event.img;
+            img.alt = event.name;
+            a.appendChild(img);
+            eventContainer.appendChild(a);
+        });
+    }
+});
