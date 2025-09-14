@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chọn Đồ Ăn</title>
+    <link rel="stylesheet" href="food.css">
+</head>
+<body>
+    <div class="food-container">
+        <h1>Chọn Đồ ăn kèm</h1>
+        <div class="food-items">
+            <div class="food-item" data-id="1" data-name="Corn" data-price="50000">
+                <img src="../image/corn.jpg" alt="corn">
+                <h3>Bỏng ngô thường</h3>
+                <p class="price">50.000 VNĐ</p>
+                <button class="add-to-order">Thêm</button>
+            </div>
+            <div class="food-item" data-id="2" data-name="Coca" data-price="30000">
+                <img src="../image/coca.jpg" alt="coca">
+                <h3>Coca</h3>
+                <p class="price">30.000 VNĐ</p>
+                <button class="add-to-order">Thêm</button>
+            </div>
+            <div class="food-item" data-id="3" data-name="pepsi" data-price="30000">
+                <img src="../image/pepsi.jpg" alt="pepsi">
+                <h3>Pepsi</h3>
+                <p class="price">30.000 VNĐ</p>
+                <button class="add-to-order">Thêm</button>
+            </div>
+            <div class="food-item" data-id="4" data-name="Cheese-Corn" data-price="60000">
+                <img src="../image/ccorn.jpg" alt="Gà Rán">
+                <h3>Bỏng ngô phô mai</h3>
+                <p class="price">60.000 VNĐ</p>
+                <button class="add-to-order">Thêm</button>
+            </div>
+        </div>
+        <h2>Đơn Hàng Của Bạn</h2>
+        <div class="order-summary">
+            <ul class="order-list">
+            </ul>
+            <p class="total">Tổng tiền: 0 VNĐ</p>
+            <button id="checkout">Thanh toán</button>
+            <div class="nav-buttons">
+                <a href="./seat.html" class="btn back">← Quay lại</a>
+                <a href="../summary.html" class="btn next">Thanh toán →</a>
+            </div>
+        </div>
+    </div>
+    <script src="food.js"></script>
+</body>
+
+</html>

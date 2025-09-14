@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: #f0f0f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333; 
+ }
+ .confirmation-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+ }
+ h1 {
+    color: #E50914; 
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+ }
+ .confirmation-details {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+ }
+
+ .confirmation-details p {
+    margin-bottom: 10px;
+ }
+
+ .confirmation-details strong {
+    font-weight: bold;
+    color: #555; 
+ }
+ #food-items {
+    list-style: none;
+    padding-left: 20px;
+ }
+
+ #food-items li::before {
+    content: "•"; 
+    color: #E50914; 
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+ }
+
+ .total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: right;
+ }
+ #total-price {
+    color: #E50914; 
+ }
+ #confirm-payment {
+    background-color: #E50914; 
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+ }
+ #confirm-payment:hover {
+    background-color: #B71C1C; 
+ }
+ #confirm-payment:active {
+    background-color: #880E4F; 
+    transform: scale(0.98); 
+ }
