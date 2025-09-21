@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chọn Ghế Xem Phim</title>
+  <link rel="stylesheet" href="seat.css">
+</head>
+<body>
+  <div class="screen-container">
+    <h2>Chọn Ghế</h2>
+    <div class="screen">MÀN HÌNH</div>
+    <div class="legend">
+      <div><span class="seat"></span> Trống</div>
+      <div><span class="seat selected"></span> Đã chọn</div>
+      <div><span class="seat occupied"></span> Đã bán</div>
+      <div class="price">Giá vé: <strong>90.000 VNĐ</strong></div>
+    </div>
+    <div class="seats-container">
+      <div class="row">
+        <div class="seat" data-row="A" data-col="1"><div class="seat-label">A1</div></div>
+        <div class="seat" data-row="A" data-col="2"><div class="seat-label">A2</div></div>
+        <div class="seat" data-row="A" data-col="3"><div class="seat-label">A3</div></div>
+        <div class="seat" data-row="A" data-col="4"><div class="seat-label">A4</div></div>
+        <div class="seat" data-row="A" data-col="5"><div class="seat-label">A5</div></div>
+        <div class="seat" data-row="A" data-col="6"><div class="seat-label">A6</div></div>
+        <div class="seat" data-row="A" data-col="7"><div class="seat-label">A7</div></div>
+        <div class="seat" data-row="A" data-col="8"><div class="seat-label">A8</div></div>
+      </div>
+      <div class="row">
+        <div class="seat" data-row="B" data-col="1"><div class="seat-label">B1</div></div>
+        <div class="seat" data-row="B" data-col="2"><div class="seat-label">B2</div></div>
+        <div class="seat occupied" data-row="B" data-col="3"><div class="seat-label">B3</div></div>
+        <div class="seat" data-row="B" data-col="4"><div class="seat-label">B4</div></div>
+        <div class="seat" data-row="B" data-col="5"><div class="seat-label">B5</div></div>
+        <div class="seat" data-row="B" data-col="6"><div class="seat-label">B6</div></div>
+        <div class="seat" data-row="B" data-col="7"><div class="seat-label">B7</div></div>
+        <div class="seat" data-row="B" data-col="8"><div class="seat-label">B8</div></div>
+      </div>
+      <div class="row">
+        <div class="seat" data-row="C" data-col="1"><div class="seat-label">C1</div></div>
+        <div class="seat" data-row="C" data-col="2"><div class="seat-label">C2</div></div>
+        <div class="seat" data-row="C" data-col="3"><div class="seat-label">C3</div></div>
+        <div class="seat" data-row="C" data-col="4"><div class="seat-label">C4</div></div>
+        <div class="seat" data-row="C" data-col="5"><div class="seat-label">C5</div></div>
+        <div class="seat occupied" data-row="C" data-col="6"><div class="seat-label">C6</div></div>
+        <div class="seat" data-row="C" data-col="7"><div class="seat-label">C7</div></div>
+        <div class="seat" data-row="C" data-col="8"><div class="seat-label">C8</div></div>
+      </div>
+      <div class="row">
+        <div class="seat" data-row="D" data-col="1"><div class="seat-label">D1</div></div>
+        <div class="seat" data-row="D" data-col="2"><div class="seat-label">D2</div></div>
+        <div class="seat" data-row="D" data-col="3"><div class="seat-label">D3</div></div>
+        <div class="seat" data-row="D" data-col="4"><div class="seat-label">D4</div></div>
+        <div class="seat" data-row="D" data-col="5"><div class="seat-label">D5</div></div>
+        <div class="seat" data-row="D" data-col="6"><div class="seat-label">D6</div></div>
+        <div class="seat" data-row="D" data-col="7"><div class="seat-label">D7</div></div>
+        <div class="seat" data-row="D" data-col="8"><div class="seat-label">D8</div></div>
+      </div>
+      <div class="row">
+        <div class="seat" data-row="E" data-col="1"><div class="seat-label">E1</div></div>
+        <div class="seat occupied" data-row="E" data-col="2"><div class="seat-label">E2</div></div>
+        <div class="seat" data-row="E" data-col="3"><div class="seat-label">E3</div></div>
+        <div class="seat" data-row="E" data-col="4"><div class="seat-label">E4</div></div>
+        <div class="seat" data-row="E" data-col="5"><div class="seat-label">E5</div></div>
+        <div class="seat" data-row="E" data-col="6"><div class="seat-label">E6</div></div>
+        <div class="seat" data-row="E" data-col="7"><div class="seat-label">E7</div></div>
+        <div class="seat" data-row="E" data-col="8"><div class="seat-label">E8</div></div>
+      </div>
+      <div class="row">
+        <div class="seat" data-row="F" data-col="1"><div class="seat-label">F1</div></div>
+        <div class="seat" data-row="F" data-col="2"><div class="seat-label">F2</div></div>
+        <div class="seat" data-row="F" data-col="3"><div class="seat-label">F3</div></div>
+        <div class="seat" data-row="F" data-col="4"><div class="seat-label">F4</div></div>
+        <div class="seat" data-row="F" data-col="5"><div class="seat-label">F5</div></div>
+        <div class="seat" data-row="F" data-col="6"><div class="seat-label">F6</div></div>
+        <div class="seat" data-row="F" data-col="7"><div class="seat-label">F7</div></div>
+        <div class="seat" data-row="F" data-col="8"><div class="seat-label">F8</div></div>
+      </div>
+    </div>
+    <p class="summary">
+      Ghế đã chọn: <span id="count">0</span> 
+      Tổng tiền: <span id="total">0</span> VNĐ
+    </p>
+    <button id="confirm">Xác nhận chọn ghế</button>
+    <div class="nav-buttons">
+        <a href="../main.html" class="btn back">← Trang chủ</a>
+      </div>
+  </div>
+  <script src="seat.js"></script>
+</body>
+</html>

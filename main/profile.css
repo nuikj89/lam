@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("./styles/cgvback.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  height: 100vh;          
+}
+.account-container {
+  display: flex;
+  width: 800px;
+  background: rgba(0, 0, 0, 0.85); 
+  border-radius: 10px;
+  overflow: hidden;
+}
+.brand {
+    background: #e63946;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #ffe100;
+  color: #000;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.logo {
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0 0 10px 0;
+}
+.subtitle {
+    font-size: 14px;
+    margin: 0 0 5px 0;
+}
+.small {
+    font-size: 12px;
+    opacity: 0.9;
+}
+.content {
+    background: #1a1a1a;
+    padding: 20px;
+}
+h2 {
+    color:#ddd ;
+    margin: 0 0 20px 0;
+    font-size: 20px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #ddd;
+}
+.field {
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 10px;
+}
+.field input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+}
+.actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.btn {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+.btn-primary {
+    background: #ffd400;
+    color: #000;
+    text-decoration: none;
+}
+.btn-outline {
+    background: transparent;
+    border: 1px solid #444;
+    color: #fff;
+}
+.password-field {
+  display: flex;
+  align-items: center;
+  background: #222;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+.password-field input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.eye-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ddd;
+}
+
+.eye-btn:hover {
+  color: #fff;
+}

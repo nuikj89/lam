@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trang tài khoản — CGV style</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+    <a href="main.html" class="back-btn">Quay về trang chính</a>
+    <main class="card">
+        <aside class="brand">
+            <h1 class="logo">CGV</h1>
+            <p class="subtitle">Thành viên — Tài khoản của bạn</p>
+            <p class="small">Quản lý thông tin đăng nhập và bảo mật.</p>
+        </aside>
+        <section class="content">
+            <h2>Thông tin tài khoản</h2>
+            <div class="grid">
+                <div>
+                    <label for="username">Tên đăng nhập</label>
+                    <div class="field"><input id="username" type="text"></div>
+                </div>
+                <div>
+                    <label for="email">Email đăng nhập</label>
+                    <div class="field"><input id="email" type="email"></div>
+                </div>
+                <div>
+                    <label for="role">Vai trò</label>
+                    <div class="field">
+                        <input id="role" type="text">
+                    </div>
+                </div>
+                <div>
+                    <label for="password">Mật khẩu</label>
+                    <div class="password-field">
+                        <input id="password" type="password" readonly>
+                        <button type="button" id="togglePassword" class="eye-btn">👁️</button>
+                    </div>
+                </div>
+                <div class="actions">
+                    <a href="login.html" class="btn btn-primary">Đăng xuất</a>
+                    <button class="btn btn-outline" id="resetPasswordBtn">Thay đổi mật khẩu</button>
+                </div>
+        </section>
+    </main>
+    <script type="module" src="profile.js"></script>
+</body>
+
+</html>

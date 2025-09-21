@@ -1,0 +1,185 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Container chính */
+.food-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.food-container h1 {
+    color: #e71a0f;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Danh sách món ăn */
+.food-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.food-item {
+    background: #1a1a1a;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-item img {
+  width: 100%;
+  height: 200px;       /* Chiều cao cố định */
+  object-fit: contain; /* Giữ nguyên ảnh, không cắt */
+  background: #000;    /* Cho nền đen giống CGV */
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+
+.food-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(231, 26, 15, 0.6);
+}
+
+.food-item img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.food-item h3 {
+    color: #ffd700;
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+}
+
+.food-item .price {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+/* Nút thêm món */
+.add-to-order {
+    background: #e71a0f;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-to-order:hover {
+    background: #b3140c;
+    transform: scale(1.05);
+}
+
+/* Đơn hàng */
+h2 {
+    margin-bottom: 15px;
+    color: #ffd700;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #e71a0f;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.order-summary {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    text-align: left;
+}
+
+.order-list {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.order-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0 20px;
+    color: #ffd700;
+}
+
+/* Nút thanh toán */
+#checkout {
+    background: #e71a0f;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+#checkout:hover {
+    background: #b3140c;
+    transform: scale(1.05);
+}
+
+/* Navigation */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.nav-buttons .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.nav-buttons .back {
+    background: #444;
+    color: #fff;
+}
+
+.nav-buttons .back:hover {
+    background: #666;
+}
+
+.nav-buttons .next {
+    background: #e71a0f;
+    color: #fff;
+}
+
+.nav-buttons .next:hover {
+    background: #b3140c;
+}
